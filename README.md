@@ -1,46 +1,26 @@
-# DevmentorLive NextJS Starter Template
+# Solving a problem on hacker rank, 3 levels
 
-## Getting Started
+## Why?
 
-To create an app using this starter
+[This challenge](https://www.hackerrank.com/challenges/one-week-preparation-kit-plus-minus/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one) sparked the code you see here.
 
-```bash
-npx create-next-app your-app-name -e https://github.com/devmentorlive-youtube/next-tailwind-starter
-```
+I routinely get students who are job prepping and they get a challenge that they fail.
 
-## This template uses [TailwindCSS](https://tailwindcss.com/)!
+When this happens the come to me to see how I would code it. Instead of just showing them the answer I take them through a journy of good, better, best.
 
-## To run your server (development)
+Enjoy.
 
-```
-cd your-app-name
-npm run dev
-```
+## If you find this useful to you..
 
-## Folder structure
+Consider tipping me a couple of bucks or more. It takes a lot of time to put this together for you in an organized, maintained manner. If you appreciate that, vote with your wallet.
 
-```bash
-src
-├── features
-├── pages
-│   └── index.jsx
-├── ui
-└── index.jsx
-```
+[You can hook me up with ❤️ here](https://bit.ly/3QHCB4c)
 
-This app uses a modified/simplified version of [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/), better suited for modern web development.
+## How to use this
 
+There are several branches in this repo, so clone it down, cd into it, and this will make more sense.
 
-### /ui
+`git branch`
 
-This folder is for your "lego blocks", single purpose React components that can be combined together to make more complicated components, known as Features
-
-
-### /features
-
-This folder is for more complex components, or features. Features are created by composing many UI components and usually, state
-
-
-### /pages
-
-This folder is for navigable components. A router automagically creates urls for anything in this folder. To create a page, combine features and ui components and put them in a component in this page. Typically state is managed in the feature, and any props that come from the server are passed through pages via the return object from getServerSideProps. Those props are then passed down into features as props, or put into a context.
+- 01-project-setup
+- 02-helper-functions
