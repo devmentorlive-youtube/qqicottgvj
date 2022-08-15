@@ -24,3 +24,7 @@ There are several branches in this repo, so clone it down, cd into it, and this 
 
 - 01-project-setup
 - 02-helper-functions
+- 03-solve-with-substitution
+- 04-solve-functionally
+- 05-solve-structurally
+- 06-solve-functionally-On
