@@ -9,3 +9,5 @@ function writeLine(str) {
 }
 
 writeLine(pad6(0.5));
+writeLine(pad6(0.333333));
+writeLine(pad6(0.166667));
