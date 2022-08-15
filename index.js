@@ -8,9 +8,21 @@ function writeLine(str) {
   process.stdout.write(str + "\n");
 }
 
-const pos = arr.filter((n) => n > 0);
-const neg = arr.filter((n) => n < 0);
-const zero = arr.filter((n) => n === 0);
+const [pos, neg, zero] = [[], [], []];
+
+for (let i = 0; i < arr.length; i++) {
+  if (parseFloat(arr[i]) > 0) {
+    pos.push(arr[i]);
+    continue;
+  }
+
+  if (parseFloat(arr[i]) < 0) {
+    neg.push(arr[i]);
+    continue;
+  }
+
+  zero.push(arr[i]);
+}
 
 writeLine(pad6(pos.length / arr.length));
 writeLine(pad6(neg.length / arr.length));
