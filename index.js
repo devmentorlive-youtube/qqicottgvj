@@ -1,4 +1,4 @@
-const input = [-4, 3, -9, 0, 4, 1];
+const arr = [-4, 3, -9, 0, 4, 1];
 
 function pad6(float) {
   return parseFloat(float).toFixed(6).toString();
@@ -8,6 +8,10 @@ function writeLine(str) {
   process.stdout.write(str + "\n");
 }
 
-writeLine(pad6(0.5));
-writeLine(pad6(0.333333));
-writeLine(pad6(0.166667));
+const pos = arr.filter((n) => n > 0);
+const neg = arr.filter((n) => n < 0);
+const zero = arr.filter((n) => n === 0);
+
+writeLine(pad6(pos.length / arr.length));
+writeLine(pad6(neg.length / arr.length));
+writeLine(pad6(zero.length / arr.length));
